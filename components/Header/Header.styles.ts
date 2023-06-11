@@ -4,6 +4,9 @@ export const useStyles = makeStyles({
   spotifyIcon: {
     maxHeight: "30px",
     marginRight: "5px",
+    "@media (max-width: 768px)": {
+      maxHeight: "18px",
+    },
   },
   container: {
     display: "flex",

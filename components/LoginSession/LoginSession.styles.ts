@@ -2,11 +2,12 @@ import { makeStyles } from "@mui/styles";
 
 export const useStyles = makeStyles({
   container: {
-    width: "25vw",
-    minHeight: "30vh",
+    width: "30vw",
+    minWidth: "250px",
+    minHeight: "auto",
     borderRadius: "18px",
     display: "flex",
-    padding: "16px",
+    padding: "30px 20px",
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
