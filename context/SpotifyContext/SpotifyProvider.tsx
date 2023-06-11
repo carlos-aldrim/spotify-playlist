@@ -54,7 +54,7 @@ export const SpotifyProvider = ({
     let body = new URLSearchParams({
       grant_type: "authorization_code",
       code: code,
-      redirect_uri: "http://localhost:3000/",
+      redirect_uri: process.env.URL || "",
       client_id: process.env.CLIENT_ID || "",
       code_verifier: codeVerifier,
     });
@@ -105,7 +105,7 @@ export const SpotifyProvider = ({
     setLoading(true);
 
     const client_id = process.env.CLIENT_ID;
-    const redirectUri = "http://localhost:3000/";
+    const redirectUri = process.env.URL;
 
     let codeVerifier = generateRandomString(128);
 
@@ -119,7 +119,7 @@ export const SpotifyProvider = ({
         response_type: "code",
         client_id: client_id || "",
         scope: scope,
-        redirect_uri: redirectUri,
+        redirect_uri: redirectUri || "",
         state: state,
         code_challenge_method: "S256",
         code_challenge: codeChallenge,
