@@ -34,6 +34,7 @@ export const useStyles = makeStyles({
     justifyContent: "space-between",
     alignItems: "center",
     flexDirection: "row",
+    color: "#FFFFFF",
   },
   itemDark: {
     backgroundColor: "#464646",
@@ -42,6 +43,7 @@ export const useStyles = makeStyles({
     justifyContent: "space-between",
     alignItems: "center",
     flexDirection: "row",
+    color: "#FFFFFF",
   },
   selectedLight: {
     backgroundColor: "#686868",
@@ -50,6 +52,7 @@ export const useStyles = makeStyles({
     justifyContent: "space-between",
     alignItems: "center",
     flexDirection: "row",
+    color: "#FFFFFF",
   },
   selectedDark: {
     backgroundColor: "#464646",
@@ -58,6 +61,7 @@ export const useStyles = makeStyles({
     justifyContent: "space-between",
     alignItems: "center",
     flexDirection: "row",
+    color: "#FFFFFF",
     "&:hover": {
       opacity: 0.8,
     },

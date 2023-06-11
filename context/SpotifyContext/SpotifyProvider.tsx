@@ -2,7 +2,6 @@ import React from "react";
 import { SpotifyContext } from "./types";
 import { generateCodeChallenge, generateRandomString } from "@/utils/functions";
 import { darkTheme, lightTheme } from "@/config/theme";
-import { CLIENT_ID } from "@/config/apiKey";
 
 export interface PlaylistsProps  {
   name: string;
@@ -56,7 +55,7 @@ export const SpotifyProvider = ({
       grant_type: "authorization_code",
       code: code,
       redirect_uri: "http://localhost:3000/",
-      client_id: CLIENT_ID,
+      client_id: process.env.CLIENT_ID || "",
       code_verifier: codeVerifier,
     });
 
@@ -105,7 +104,7 @@ export const SpotifyProvider = ({
   const onLoginButtonClick = () => {
     setLoading(true);
 
-    const clientId = CLIENT_ID;
+    const client_id = process.env.CLIENT_ID;
     const redirectUri = "http://localhost:3000/";
 
     let codeVerifier = generateRandomString(128);
@@ -118,7 +117,7 @@ export const SpotifyProvider = ({
 
       let args = new URLSearchParams({
         response_type: "code",
-        client_id: clientId,
+        client_id: client_id || "",
         scope: scope,
         redirect_uri: redirectUri,
         state: state,
