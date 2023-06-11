@@ -21,7 +21,7 @@ export const useStyles = makeStyles({
     alignItems: "center",
     flexDirection: "row",
     width: "max-content",
-    margin: "0 1rem",
+    margin: "0 1.5rem",
   },
   pages: {
     display: "flex",
@@ -31,7 +31,7 @@ export const useStyles = makeStyles({
   },
   text: {
     fontSize: "0.9rem",
-    margin: "0 1rem",
+    margin: "0 1.5rem",
     fontWeight: 600,
     "&:hover": {
       borderBottom: "2px solid",
