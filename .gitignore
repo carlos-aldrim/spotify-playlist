@@ -16,6 +16,7 @@
 /build
 
 # misc
+/config/apiKeys.ts
 .DS_Store
 *.pem
 
