@@ -21,7 +21,7 @@ export const useStyles = makeStyles({
     alignItems: "center",
     flexDirection: "column",
     height: "auto",
-    minHeight: "50%",
+    minHeight: "300px",
     width: "50%",
     padding: "1rem",
   },
